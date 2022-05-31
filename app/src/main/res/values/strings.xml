@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Math Puzzle</string>
+    <string name="submit">Submit</string>
+    <string name="equal">=</string>
+</resources>
