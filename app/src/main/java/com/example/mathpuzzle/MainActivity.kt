@@ -1,5 +1,6 @@
 package com.example.mathpuzzle
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -132,24 +133,26 @@ class MainActivity : AppCompatActivity() {
             i.text= choices[j].toString()
             choices.removeAt(j)
         }
+        for(i in z_choiceList){ i.setBackgroundColor(Color.parseColor("#5e22e0")) }
 
         //clikings!!!
         fun click(n:Button){
 
             n.setOnClickListener {
+                n.setBackgroundColor(Color.RED);
                 var temp:CharSequence=" "
                 if(n.text==" "){ /** dont do anything */ }
                 else {
-                    a1.setOnClickListener { temp=a1.text; a1.text = n.text; n.text = temp}
-                    a2.setOnClickListener { temp=a2.text; a2.text = n.text; n.text = temp }
-                    b1.setOnClickListener { temp=b1.text; b1.text = n.text; n.text = temp}
-                    b2.setOnClickListener { temp=b2.text; b2.text = n.text; n.text = temp}
-                    c1.setOnClickListener { temp=c1.text; c1.text = n.text; n.text = temp}
-                    c2.setOnClickListener { temp=c2.text; c2.text = n.text; n.text = temp}
-                    d1.setOnClickListener { temp=d1.text; d1.text = n.text; n.text = temp}
-                    d2.setOnClickListener { temp=d2.text; d2.text = n.text; n.text = temp}
-                    e1.setOnClickListener { temp=e1.text; e1.text = n.text; n.text = temp}
-                    e2.setOnClickListener { temp=e2.text; e2.text = n.text; n.text = temp}
+                    a1.setOnClickListener { temp=a1.text; a1.text = n.text; n.text = temp ;n.setBackgroundColor(Color.parseColor("#5e22e0")) }
+                    a2.setOnClickListener { temp=a2.text; a2.text = n.text; n.text = temp ;n.setBackgroundColor(Color.parseColor("#5e22e0")) }
+                    b1.setOnClickListener { temp=b1.text; b1.text = n.text; n.text = temp ;n.setBackgroundColor(Color.parseColor("#5e22e0")) }
+                    b2.setOnClickListener { temp=b2.text; b2.text = n.text; n.text = temp ;n.setBackgroundColor(Color.parseColor("#5e22e0")) }
+                    c1.setOnClickListener { temp=c1.text; c1.text = n.text; n.text = temp ;n.setBackgroundColor(Color.parseColor("#5e22e0")) }
+                    c2.setOnClickListener { temp=c2.text; c2.text = n.text; n.text = temp ;n.setBackgroundColor(Color.parseColor("#5e22e0")) }
+                    d1.setOnClickListener { temp=d1.text; d1.text = n.text; n.text = temp ;n.setBackgroundColor(Color.parseColor("#5e22e0")) }
+                    d2.setOnClickListener { temp=d2.text; d2.text = n.text; n.text = temp ;n.setBackgroundColor(Color.parseColor("#5e22e0")) }
+                    e1.setOnClickListener { temp=e1.text; e1.text = n.text; n.text = temp ;n.setBackgroundColor(Color.parseColor("#5e22e0")) }
+                    e2.setOnClickListener { temp=e2.text; e2.text = n.text; n.text = temp ;n.setBackgroundColor(Color.parseColor("#5e22e0")) }
                 }
             }
         }
@@ -200,5 +203,4 @@ class MainActivity : AppCompatActivity() {
         }
 
 }
-
 
